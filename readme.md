@@ -24,7 +24,7 @@ PostWave is a Django-based web application that allows users to sign up, log in,
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/PostWave.git
+    git clone https://github.com/dheeraj-code1/PostWave.git
     cd PostWave
     ```
 
