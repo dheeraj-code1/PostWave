@@ -17,7 +17,7 @@ WORKDIR /app
 COPY chaiheadq /app
 COPY --from=build-venv /venv /venv
 # COPY . /app
-# aws codepipline testing 1,2,3
+# aws codepipline testing 1,2,32
 # Use the absolute path to python
 ENTRYPOINT ["/venv/bin/python3"]
 CMD ["manage.py", "runserver", "0.0.0.0:4000"]
