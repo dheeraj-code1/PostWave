@@ -10,13 +10,14 @@ COPY requirements.txt /requirements.txt
 RUN /venv/bin/pip install --disable-pip-version-check -r /requirements.txt
 
 
+
 # Use slim image for final stage
 FROM python:3.10-slim
 WORKDIR /app
 COPY chaiheadq /app
 COPY --from=build-venv /venv /venv
 # COPY . /app
-
+# aws codepipline testing 
 # Use the absolute path to python
 ENTRYPOINT ["/venv/bin/python3"]
 CMD ["manage.py", "runserver", "0.0.0.0:4000"]
